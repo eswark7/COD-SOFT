@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="app.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
     <title>Portfolio</title>
     
     
@@ -13,7 +12,7 @@
 
 <body>
     <nav>
-        <div class="container nav-container">
+        <div class="nav-container">
             <a href="" class="logo">
                 <h2>PORT<span>FOLIO.</span></h2>
             </a>
@@ -40,12 +39,12 @@
                 <h5>Frontend Developer </h5>
                 <br>
                 <div class="header-action-aria">
-                    <a href="cv.pdf" download class="btn btn-primary">Download CV</a>
+                    <a href="cv.pdf" download class="btn-donate">Download CV</a>
                     <a href="" class="btn">Read more</a>
                 </div>
             </div>
             <div class="header-right">
-                <img src="a1.png" alt="">
+                <img src="a1.jpg" alt="" class="profile-photo">
             </div>
     </header>
 
@@ -106,7 +105,7 @@
                     experience, enabling online presence and interaction.</p>
             </article>
             <article class="services-article">
-                <img src="python.png" alt="">
+                <img src="python.jpg" alt="" width="50" height="200">
                 <h2>Python Programming</h2>
                 <p>
 
@@ -116,39 +115,46 @@
     </section>
 
     <section id="skills">
-        <h1> My Skills</h1>
+        <h1 class="myskills"> My Skills</h1>
         <div class="container skills-container">
             <article class="skill-article">
 
-                <h4>HTML </h4>
+                <h4>
+                    <span>HTML </span>
+                </h4>
             </article>
             <article class="skill-article">
 
-                <h4>CSS</h4>
+                <h4><span>
+                    CSS
+                </span></h4>
             </article>
             <article class="skill-article">
 
-                <h4>Javascript</h4>
+                <h4><span>Javascript</span></h4>
+                
             </article>
             <article class="skill-article">
 
-                <h4>MySql</h4>
+                <h4><span>MySql</span></h4>
             </article>
             <article class="skill-article">
 
-                <h4>Python</h4>
+                <h4>
+                    <span>Python</span>
+                </h4>
             </article>
             <article class="skill-article">
 
-                <h4>WebDesign</h4>
+                <h4><span>WebDesign</span></h4>
             </article>
             <article class="skill-article">
 
-                <h4>JAVA</h4>
+                <h4><span>JAVA</span></h4>
             </article>
             <article class="skill-article">
 
-                <h4>DATA ANALYSIS</h4>
+                <h4><span>DATA ANALYSIS</span></h4>
             </article>
 
         </div>
@@ -158,14 +164,14 @@
     <section id="Blog">
         <div class="row">
             <div class="header">
-                <h1>Blog</h1>
+                <h1 class="myblog" >Blog</h1>
                 <p>Welcome to the exhilarating world of front-end development, web design, and web development. In this concise guide, we'll explore the essential elements of this vibrant and ever-evolving field, offering insights and tips to help you navigate and excel.
                                     .</p>
             </div>
             <div class="content">
                 <div class="card">
 
-                    <img src="web design (1).jpg" alt="">
+                    <img src="coding.png" alt="">
                     <br>
                     <p>
                       Web design is the art of creating visually stunning and user-friendly websites. By seamlessly blending typography, color theory, and layout, we deliver memorable online experiences. Utilizing cornerstone languages 
@@ -174,7 +180,7 @@
                 </div>
                 <div class="card">
 
-                    <img src="web design (2).jpg" alt="">
+                    <img src="coding2.jpg" alt="" class="coding2">
                     <br>
                     <p>
                       Responsive web design ensures that websites effortlessly adapt to 
@@ -193,16 +199,41 @@
         <h1> Get In Touch</h1>
         <div class="contatact-container container">
             <form>
+                
                 <div class="form-top">
-                    <input type="text" placeholder="  First Name" required>
-                    <input type="text" placeholder="Last Name" required>
-                    <input type="email" placeholder="Email" required>
-                    <input type="number" placeholder="Phone Number" required>
-
+                    <div class="form__group field">
+                        <input type="input" class="form__field" placeholder="First Name" required="">
+                        <label for="name" class="form__label">First Name</label>
+    
+                    </div>
+    
+                    <div class="form__group field">
+                        <input type="input" class="form__field" placeholder="Last Name" required="">
+                        <label for="name" class="form__label">Last Name</label>
+    
+                    </div>
+    
+                    <div class="form__group field">
+                        <input type="email" class="form__field" placeholder="Emaill" required="">
+                        <label for="name" class="form__label">Email</label>
+    
+                    </div>
+    
+                    <div class="form__group field">
+                        <input type="input" class="form__field" placeholder="Mobile" required="">
+                        <label for="name" class="form__label">Mobile</label>
+    
+                    </div>
                 </div>
-                <div class="form-bottom">
-                    <textarea name="message" placeholder="message"></textarea>
-                    <button type="submit" class="btn btn-primary">Sumbit Now</button>
+
+                <div class="form-bottom textarea">
+                    
+                    <div class="form__group field messages">
+                        <input type="input" class="form__field" placeholder="Message" required="">
+                        <label for="name" class="form__label">Message</label>
+    
+                    </div>
+                    <button type="submit" class="btn-donate">Sumbit Now</button>
                 </div>
             </form>
         </div>
